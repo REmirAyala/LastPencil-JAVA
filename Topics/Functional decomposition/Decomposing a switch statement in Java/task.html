@@ -1,0 +1,41 @@
+<h2>Decomposing a switch statement in Java</h2>
+<div class="step-text">
+<div class="alert alert-warning">Hey there! This problem might be a bit unpredictable, but give it a go and let us know how you do!</div>Given the following Java code snippet, identify the sections that could be refactored into separate methods to enhance functional decomposition. Further, consider that these methods may be reused elsewhere in the code.<pre><code class="java">public static void main(String[] args) {
+  int choice = Integer.parseInt(args[0]);
+  String result;
+  switch (choice) {
+    case 1:
+      result = doActionOne();
+      break;
+    case 2:
+      result = doActionTwo();
+      break;
+    case 3:
+      result = doActionThree();
+      break;
+    default:
+      result = 'Invalid choice.';
+  }
+  System.out.println(result);
+  logResult(result);
+}
+
+public static String doActionOne() {
+  // some business logic here
+  return 'You chose 1.';
+}
+
+public static String doActionTwo() {
+  // some business logic here
+  return 'You chose 2.';
+}
+
+public static String doActionThree() {
+  // some business logic here
+  return 'You chose 3.';
+}
+
+public static void logResult(String result) {
+  // logging code here
+}</code></pre>
+</div>
